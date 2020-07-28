@@ -1,0 +1,175 @@
+body{
+  font-family: 'Baloo Da 2', Arial;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Ubuntu, Arial;
+  font-weight: normal;
+}
+
+h1{
+  line-height: 1.5em;
+  font-size: 40px;
+  letter-spacing: -.3px;
+  margin: 0;
+  /* text-transform: uppercase; */
+  /* text-decoration: underline; */
+}
+
+h2{
+  color: blue;
+  text-transform: uppercase;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+ol, ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+
+.header{
+  background-color: #2d3436;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.menu{
+  height: inherit;
+}
+.header ul{
+  display: flex;
+  height: inherit;
+}
+.header ul li{
+  height: inherit;
+}
+
+.hero{
+  height: 300px;
+  color: white;
+  background-color: #2d3436;
+  background-image: url('../images/mesa2.jpg');
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+}
+
+.hero strong{
+  color: blue;
+}
+
+.portfolio{
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+.images{
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* border-top: 10px solid red;
+  border-left: 10px solid blue;
+  border-right: 10px solid pink;
+  border-bottom: 10px solid green; */
+
+  /* border-top-width: 10px;
+  border-top-style: solid; */
+}
+
+.images-title{
+  font-size: 30px;
+  /* margin-bottom: 10px 0; */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.images-usage,
+.images-date,
+.images-url{
+  margin: 10px 0;
+}
+
+.images-description{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.images-details{
+  width: 500px;
+  /* con el height podemos superponer elementos, un tip */
+}
+
+.images-imageContainer{
+  width: 450px;
+}
+
+.images strong{
+  font-family:  Arial;
+}
+
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;   /*si se termina renglon poener en el siguiente */
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  flex-shrink: 0;   /*que tanto se encoge valores de 0-1 */
+}
+
+.experience-list{
+  display: flex;
+}
+.experience{
+  border: 1px solid red;
+  margin: 10px;
+  width: 480px;
+}
+
+.footer{
+  background-color: #2d3436;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-div{
+  display: inherit;
+  align-items: center
+}
+
+.footer img{
+  height: 100px;
+  border-radius: 50%;
+}
