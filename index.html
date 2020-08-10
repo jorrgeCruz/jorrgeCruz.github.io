@@ -5,13 +5,16 @@
     <title>Jorge Cruz -- Frontend Developer and Professor</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <meta  name="viewport" content=" width=device-width, initial-scale=1">
   </head>
   <body>
+    <i class="icon-menu burguer-button"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
-          <img src="images/logo2.jpg" alt="logo de http://ciencias.uabjo.mx">
+          <img src="images/logo2.jpg" height="100px" alt="logo de http://ciencias.uabjo.mx">
         </figure>
         <nav class="menu">
           <ul>
@@ -34,7 +37,7 @@
         <img class="hero-img" src="images/mesa2.jpg" alt="imagen portada" width="500">
       </div>
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio"> 
       <div class="container">
         <h2 >Portfolio (Main Projects)</h2>
         <article class="images">
@@ -53,12 +56,11 @@
           </figure>
         </article>
       </div>
-
     </section>
-      <div class="container">
-
+    
+    <div class="container">
         <h2 class="experience-title"> A little bit about my experience</h2>
-      </div>
+    </div>
       <section class="experience-list" id="experience">
         <div class="container">
           <article class="experience">
@@ -75,12 +77,15 @@
           </article>
           <article class="experience">
             <figure class="experience-imageContainer" >
-              <img class="experience-image" src="images/mesa1.jpg" alt="mesa directiva" width="500">
+              <div class="flex-video">
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/V2VToIDHWIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <!-- <img class="experience-image" src="images/mesa1.jpg" alt="mesa directiva" width="500"> -->
             </figure>
             <div class="experience-details">
               <h3 class="experience-smallTitle">Cambio unico en cabecera, UABJO, 2009-2012</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school <br>
-                among other things   <br>
+              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school 
+                among other things   
                 talk about legos
               </p>
               <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
@@ -88,12 +93,12 @@
           </article>
           <article class="experience">
             <figure class="experience-imageContainer" >
-              <img class="experience-image" src="images/mesa1.jpg" alt="mesa directiva" width="500">
+              <video class="html-video" src="../videotest.mp4" width="640" height="480" controls></video>
             </figure>
             <div class="experience-details">
               <h3 class="experience-smallTitle">cambio final de master</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school <br>
-                among other things   <br>
+              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school 
+                among other things   
                 talk about legos
               </p>
               <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
@@ -105,8 +110,8 @@
             </figure>
             <div class="experience-details">
               <h3 class="experience-smallTitle">Principal of science school, UABJO, 2009-2012</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school <br>
-                among other things   <br>
+              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school 
+                among other things   
                 talk about legos
               </p>
               <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
@@ -114,7 +119,7 @@
           </article>
         </div>
       </section>
-
+     
     <section class="contact" id="contact">
       <div class="container">
         <form class="contact-form" action="/suscripcion">
@@ -139,5 +144,6 @@
         <div>Designed by @Jorge Cruz </div>
       </div>
     </footer>
+    <script src="js/dyno.js"></script>
   </body>
 </html>
