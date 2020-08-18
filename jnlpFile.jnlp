@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase=
+"https://jorrgecruz.github.io" 
+    href="jnlpFile.jnlp">
+    <information>
+        <title>Imagic Processing</title>
+        <vendor>Jorge Cruz Web Developer</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.7+"
+              href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="images/ImagicProcessing.jar"
+            main="true" />
+
+    </resources>
+    <application-desc
+         name="Imagic Processing"
+         main-class=
+           "windows.MainFrame"
+         width="800"
+         height="600">
+     </application-desc>
+     <update check="background"/>
+</jnlp>    
