@@ -10,140 +10,287 @@
     <meta  name="viewport" content=" width=device-width, initial-scale=1">
   </head>
   <body>
-    <i class="icon-menu burguer-button"></i>
-    <header class="header">
-      <div class="container">
-        <figure class="logo">
-          <img src="images/logo2.jpg" height="100px" alt="logo de http://ciencias.uabjo.mx">
-        </figure>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a class="link" href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a class="link" href="#experience">Experience</a>
-            </li>
-            <li>
-              <a class="link" href="#contact">Collaborations</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="hero"> <!--la seccion Principal normalmente la llaman hero -->
-      <div class="container">
-        <h1>Hi, I'm <strong>Jorge Cruz</strong>,<br> Frontend Developer <br> and <strong>Professor V1.0.0</strong></h1>
-        <img class="hero-img" src="images/mesa2.jpg" alt="imagen portada" width="500">
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio"> 
-      <div class="container">
-        <h2 >Portfolio (Main Projects)</h2>
-        <article class="images">
-          <div class="images-details">
-            <h3 class="images-title">Image Processing</h3>
-            <h6 class="images-usage">Java GUI and arrays</h6>
-            <p class="images-date"> <small> <strong>Date:</strong> Dec/2019</small> </p>
-            <p class="images-url">You can see it here:<strong>www.ciencias.uabjo.mx/jorgecruz/imagenes</strong></p>
-            <p class="images-description">As a result of Image Processing class, we develop an application that
-              process images from the RGB values, with bit level numbers operations and
-              some other basic operatios, as a result we program a GUI
-            </p>
-          </div>
-          <figure class="images-imageContainer">
-            <img class="images-image" src="images/gui.jpg" alt="imgen caratula app"  width="450px">
-          </figure>
-        </article>
-      </div>
-    </section>
+    <section class="gridparent">
     
-    <div class="container">
-        <h2 class="experience-title"> A little bit about my experience</h2>
-    </div>
-      <section class="experience-list" id="experience">
-        <div class="container">
-          <article class="experience">
-            <figure class="experience-imageContainer" >
-              <img class="experience-image" src="images/mesa1.jpg" alt="mesa directiva" width="500">
-            </figure>
-            <div class="experience-details">
-              <h3 class="experience-smallTitle">Principal of science school, UABJO, 2009-2012</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a
-                new builden at the school among other things   talk about legos
-              </p>
-              <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
-            </div>
-          </article>
-          <article class="experience">
-            <figure class="experience-imageContainer" >
-              <div class="flex-video">
-                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/V2VToIDHWIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <!-- <img class="experience-image" src="images/mesa1.jpg" alt="mesa directiva" width="500"> -->
-            </figure>
-            <div class="experience-details">
-              <h3 class="experience-smallTitle">Cambio unico en cabecera, UABJO, 2009-2012</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school 
-                among other things   
-                talk about legos
-              </p>
-              <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
-            </div>
-          </article>
-          <article class="experience">
-            <figure class="experience-imageContainer" >
-              <video class="html-video" src="../videotest.mp4" width="640" height="480" controls></video>
-            </figure>
-            <div class="experience-details">
-              <h3 class="experience-smallTitle">cambio final de master</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school 
-                among other things   
-                talk about legos
-              </p>
-              <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
-            </div>
-          </article>
-          <article class="experience">
-            <figure class="experience-imageContainer" >
-              <img class="experience-image" src="images/mesa1.jpg" alt="mesa directiva" width="500">
-            </figure>
-            <div class="experience-details">
-              <h3 class="experience-smallTitle">Principal of science school, UABJO, 2009-2012</h3>
-              <p class="experience-description">In 2009 i was Principal of science school, in this time we open a new builden at the school 
-                among other things   
-                talk about legos
-              </p>
-              <p><a class="experience-url" href="https://www.youtube.com/channel/UCwIhzUALliZKgYvrrIjdF7A" target="_blank"> Escuela de ciencias</a></p>
-            </div>
-          </article>
+      <header class="header theme">
+        <i class="icon-menu burguer-button"></i>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a class="link" href="#portfolio">Portafolio</a>
+              </li>
+              <li>
+                <a class="link" href="#experience">Experiencia</a>
+              </li>
+              <li>
+                <label id="label" for="">Light theme</label>
+              </li>
+            </ul>
+          </nav>
+        
+      </header>
+      
+      <section class="me  theme">
+        <div class="container-me">
+          <img class="me-img" src="images/perfil2.jpg" alt="">
+          <img class="me-map" src="images/mapa.png" alt="imagen portada" width="500">
+          <h1>Frontend Developer <br> and <strong>Professor</strong></h1>
+          <h2><strong>Jorge Cruz</strong> </h2>
         </div>
       </section>
-     
-    <section class="contact" id="contact">
-      <div class="container">
-        <form class="contact-form" action="/suscripcion">
-          <h3>Collaborations, we can work together let's go</h3>
-          <label for="email"> Ingresa tu mail</label>
-          <input type="datetime" placeholder="Dejame tu email" id="email" required>
-          <button name="button">Enviar</button>
-        </form>
-        <div class="social">
-          <a href="" class="social-link facebook"></a>
-          <a href="" class="social-link instagram"></a>
-          <a href="https://github.com/jorrgeCruz/" class="social-link github"></a>
-        </div>
+
+      <section class="specialties  theme">
+        <h3>Especialidades</h3>
+        <ul>
+          <li>
+            <img class="mobile" src="./images/mobile.png" alt="" > <div >App Programer</div>
+          </li>
+          <li>
+            <img src="./images/prof.png" alt="" class="teach"> <div >Educación</div>
+          </li>
+          <li>
+            <img src="./images/code.png" alt="" class="code"> <div >Frontend Developer</div>
+          </li>
+        </ul>
+      </section>
+      <section class="hero  theme"> 
+              
+          <p>Cuento con más de 15 de experiencia <strong>docente a nivel Universidad </strong>  en el área de Ciencias de la Computación, soy apasionado de las <strong>TI y Programación </strong> , con gran habilidad para la resolución de problemas, trabajo en equipo, colaborativo, adaptabilidad a las nuevas tecnologías y autodidacta</p>
+        
+      </section>
+      <section class="contact  theme" >
+            
+          <ul class="social">
+            <li> 
+              <i class="icon-location"></i><span>  Oaxaca City, México</span>
+            </li>
+            <li>
+              <i class="icon-phone"></i><span>  (52) 951 244 0735</span>
+            </li>
+            <li>
+              <i class="icon-mail2"></i><span>  jorrge.cruz@gmail.com</span>
+            </li>
+            <li>
+              <i class="icon-codepen"></i><a href="" class="social-link">  codepen</a>
+            </li>
+            <li>
+              <i class="icon-linkedin"></i><a href="https://www.linkedin.com/in/jorge-cruz-9249b51b4/" class="social-link ">  jorge-cruz-9249b51b4</a>
+            </li>
+            <li>
+              <i class="icon-github"></i><a href="https://github.com/jorrgeCruz/" class="social-link">  github.com/jorrgeCruz</a>
+            </li>
+       
+          </ul>
+      </section>
+    
+      <section class="pai-chart  theme">
+       <div>
+        <h3>Caracteristicas</h3>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-div">Portafolio de presentacion 2020 </div>
-        <div class="">
-          <img src="https://ciencias-uabjo.com.mx/img/logo1.png" alt="logo-ciencias">
+      <div class="chart"> 
+        <canvas id=circlechart width="640" height="400"></canvas>
+      </div>  
+      </section>
+      <section class="competences  theme">
+        <h3>Competencias</h3> 
+        <ul>
+          <li>
+            <div>HTML </div>
+            
+            <canvas class="html-bar bar" width="200" height="20" id=html-bar></canvas>
+          </li>
+          <li>
+            <div>CSS</div>
+            <canvas class="css-bar  bar" width="200" height="20" id=css-bar></canvas>
+          </li>
+          <li>
+            <div>JavaScript</div>
+            <canvas class="js-bar bar" width="200" height="20" id=js-bar></canvas>
+          </li>
+          <li>
+            <div>Java SE</div><br>
+            <canvas class="java-bar bar" width="200" height="20" id=java-bar></canvas>
+          </li>
+          <li>
+            <div>git</div><br>
+            <canvas class="git-bar bar" width="200" height="20" id=git-bar></canvas>
+          </li>
+          <li>
+            <div>PHP</div><br>
+            <canvas class="php-bar bar" width="200" height="20" id=php-bar></canvas>
+          </li>
+          <li>
+            <div>Angular</div><br>
+            <canvas class="angular-bar bar" width="200" height="20" id=angular-bar></canvas>
+          </li>
+          <li>
+            <div>React</div><br>
+            <canvas class="react-bar bar" width="200" height="20" id=react-bar></canvas>
+          </li>
+          <li>
+            <div>Kotlin</div><br>
+            <canvas class="kotlin-bar bar" width="200" height="20" id=kotlin-bar></canvas>
+          </li>
+          <li>
+            <div>Node</div><br>
+            <canvas class="node-bar bar" width="200" height="20" id=node-bar></canvas>
+          </li>
+          <li>
+            <div>MySQL</div><br>
+            <canvas class="mysql-bar bar" width="200" height="20" id=mysql-bar></canvas>
+          </li>
+          <li>
+            <div>Mongo</div><br>
+            <canvas class="mongo-bar bar" width="200" height="20" id=mongo-bar></canvas>
+          </li>
+        </ul>
+        
+      </section>
+      <section class="hobbies  theme">
+        <h3>Gustos</h3>
+        <ul class="subcontainer">
+          <li><i class="icon-headphones"></i><div>  Music</div></li>
+          <li><i class="icon-bike"></i><div>  Bikejoring</div></li>
+          <li><i class="icon-mobile"></i><div>  Gadgets</div></li>
+      
+          <li><i class="icon-sports_motorsports"></i><div>  Races</div></li>
+          <li><i class="icon-film1"></i><div>  Movies</div></li>
+          <li><i class="icon-weights"></i><div> Workout</div></li>
+        </ul>
+      </section>
+      <section class="experience-list  theme" >
+        <h3 class="experience-title"> Experiencia</h3>
+        <article class="experience">
+          <div class="date"> <h2>AGO</h2> <h3>2020</h3> 
+            <h2>A LA</h2> <h3>FECHA</h3>
+          </div>
+          <div class="experience-details">
+            <h3 class="experience-smallTitle">Incosur</h3>
+            <p class="experience-description">Desarrollo de pagina de ventas
+            </p>
+              Sitio oficial de la empresa INCOSUR (en desarrollo)
+          </div>
+        </article>
+        <article class="experience">
+          <div>
+            <h2>AGO</h2> <h3>2005</h3> 
+            <h2>A LA</h2> <h3>FECHA</h3>
+          </div>
+          <div class="experience-details">
+            
+            <h3 class="experience-smallTitle">Universida Autonoma Benito Juárez de Oaxaca</h3>
+              <p class="experience-description">Profesor de catedra en <a class="experience-url" href="https://www.ciencias.uabjo.mx" target="_blank"> Escuela de ciencias</a>
+                <br>
+                Licentiaturas: 
+                <strong> Fisica,
+                  Matematicas,
+                  Computacion</strong> 
+                
+              </p>
+          </div>
+        </article>  
+        <article class="experience">
+          <div>
+            <h2>SEP</h2> <h3>2009</h3> 
+            <h2>AGO</h2> <h3>2012</h3>
+          </div>
+              <div class="experience-details">
+                <h3 class="experience-smallTitle">Director de la Escuela de Ciencias, UABJO, 2009-2012</h3>
+                <p class="experience-description">En 2009 fui electo director de la Escuela de Ciencias, cumpliendo las laboares administrativas que generaron la acreditacion de la misma y construccion de nuevos edificios
+                </p>
+              </div>
+        </article> 
+        
+      </section>
+      
+      <section class="academic-history  theme">
+        <h3>Educacion</h3>
+          <ul>
+            <li>
+              <div class="icon">
+                <i class="icon-graduate"></i>
+              </div>
+              <div class="history-data">
+                <h3>
+                  CENTRO DE INVESTIGACION EN MATEMATICAS (CIMAT)
+                </h3>
+                Maestria Ciencias de la Computacion Y Matematicas Industriales
+                2002-2004 <br>
+                <strong>Beca Conacyt - Posgrado de Excelencia</strong>  
+              </div>
+              <div class="prize1"><i class="icon-medal"></i></div>
+
+            </li>
+            <li>
+              <div class="icon">
+                <i class="icon-graduate"></i>
+              </div>
+              <div class="history-data">
+              <h3 >
+                 INSTITUTO TECNOLOGICO DE OAXACA
+              </h3>
+              Ingenieria Civil
+              1995-2000 <br>
+              <br>
+              
+              <strong>Titulo por Promedio mayor a 9</strong>
+               
+            </div>
+            <div class="prize"><i class="icon-medal"></i></div>
+            </li>
+          </ul>
+
+      </section>
+      <section class="languages  theme">
+        <h3>Idiomas</h3>
+        
+        <div>
+          <div> <h2> Ingles</h2></div>
+            <ul class="idioms">
+              
+              <li>Comprension</li>
+              <li>Consersaciom</li>
+              <li>Escritura</li>
+              <li>B1</li>
+              <li>A2</li>
+              <li>A2</li>
+            </ul>
         </div>
-        <div>Designed by @Jorge Cruz </div>
-      </div>
-    </footer>
+      </section>
+      <section class="references  theme">
+        <h3>Referencias</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/omarsosatzec/" class="social-link "> <i class="icon-linkedin"></i> </a>
+            <strong> Omar Sosa-Tzec
+            </strong>
+            Assistant Professor of Design Foundations at San Francisco State University
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/leonardo-gomez-8a554b94/" class="social-link "> <i class="icon-linkedin"></i> </a>
+            <strong> Leonardo Gomez
+            </strong>
+            iOS Developer at Softtek México <br>UABJO
+          </li>
+          <li>
+            <a href="http://www.ciencias.uabjo.mx/contacto" class="social-link "> <i class="icon-mail2"></i> </a>
+            <strong>Ruben Lopez Gonzalez</strong>
+            Director de la Escuela de Ciencias -UABJO
+          </li>
+        </ul>
+      </section>
+      <footer class="footer ">
+        <div class="container">
+          <div class="footer-div">Portafolio de presentacion 2020 </div>
+          <div class="">
+            <img src="https://ciencias-uabjo.com.mx/img/logo1.png" alt="logo-ciencias">
+          </div>
+          <div>Designed by @Jorge Cruz </div>
+        </div>
+      </footer>
+  </section>
+  
     <script src="js/dyno.js"></script>
+
   </body>
 </html>
