@@ -56,5 +56,34 @@ function validation(event ){
  //BLOQUE PRINCIPAL
  validation(ipad);
 
+ function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  var inicio, fin;
+  inicio = type*3;
+  fin = type*3+3;
  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  
+  slideIndex++; 
+  if (slideIndex > fin) {slideIndex = inicio+1}    
+  
+  for (i = 0; i < 3; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[(slideIndex-1)%3].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+ 
+ var href= window.location.href;
+ var type= (parseInt( href.charAt(href.length-1))-1);
+ var slideIndex = type*3;
+showSlides();
+
+
 

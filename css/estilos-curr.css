@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6{
 
 .gridparent{
   display: grid;
-  grid-template: 40px 200px 220px 400px 150px 200px 50px/ 50% 50%;
+  grid-template: 40px 200px 220px 440px 400px 400px 150px 200px 50px/ 50% 50%;
   margin:0 auto;
   gap: 10px;
   max-width:1000px;
@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, h6{
   grid-template-areas: "header header"
                        "me specialties"
                        "hero contact"
+                       "pai-chart pai-chart"
+                       "competences hobbies"
                        "experience-list academic-history"
                        "experience-list languages"
                        "experience-list references"
@@ -154,7 +156,45 @@ h1, h2, h3, h4, h5, h6{
   display: block;
 }
 
+.pai-chart{
+  grid-area: pai-chart;
+  background-color:  rgb(220,229,225);
+  display: block;
+  justify-content: center;
+}
 
+.chart{
+  display: flex;
+  justify-content: center;
+}
+
+.competences{
+  grid-area: competences;
+  background-color:  rgb(220,229,225);
+}
+
+.competences li{
+  display: flex;
+  padding: 4px 0;
+  height: 20px;
+}
+.competences div{
+  width: 100px;
+}
+.competences canvas{
+  box-shadow: 5px 4px 4px 1px lightgrey;
+}
+
+.hobbies{
+  grid-area: hobbies;
+  background-color:  rgb(220,229,225);
+}
+
+.hobbies i{
+  font-size: 60px;
+  /* color: blueviolet; */
+  color: mediumorchid;
+}
 .subcontainer{
   display: grid;
   grid-template: 150px 150px / 1fr 1fr 1fr;
@@ -167,7 +207,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .experience{
   display: grid;
-  grid-template: 250px / 1fr 3fr;
+  grid-template: 150px / 1fr 3fr;
 }
                      
 .academic-history{
