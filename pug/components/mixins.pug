@@ -1,0 +1,36 @@
+mixin specialtie(cla, src, alter, text)
+	li
+		img(class=cla src="./images/"+src alt=alter)
+		div=text
+mixin contact(ico, text, url)
+	li
+		i(class="icon-"+ico)
+		if url
+			a.social-link(href=url) #{text}
+		else
+			span=text
+mixin experience(month, year, url, source, alter, smtitle, shortVer, giturl, textref, parr)
+	article.experience
+		.date
+			h2=month
+			h3=year
+			a(href=url)
+				img(src=source alt=alter, width="120")
+		.experience-details
+			h3.experience-smallTitle=smtitle
+			p.experience-description=shortVer
+				br
+				| You can see it here: 
+				i.icon-github
+				a.social-link(href=giturl)=textref
+				br 
+				| #{parr}
+mixin reference(url, name, post, link)
+	li
+		a.social-link(href=url)
+			if(link=="lin")
+				i.icon-linkedin
+			else	
+				i.icon-mail2
+		strong=name
+		| #{post}

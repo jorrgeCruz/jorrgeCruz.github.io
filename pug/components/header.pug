@@ -1,0 +1,39 @@
+header.header.theme
+	i.icon-menu.burguer-button
+	nav.menu
+		ul
+			li: a.link(href="curriculum.html") Curriculum
+			li: a.link(href="#experience") Experiencia
+			li: label#label Light theme
+section.me.theme
+	.container-me
+		img.me-img(src="images/perfil2.jpg" alt="Imgen de perfil")
+		img.me-map(src="images/mapa.png" alt="mapa de localizacicon"  width="100%")
+		h1 Frontend Developer 
+			br 
+			| and 
+			strong Professor
+		h2: strong Jorge Cruz
+section.specialties.theme
+	h3 Especialidades
+	ul
+		+specialtie('mobile',"mobile.png","icon mobile","Programer")
+		+specialtie('teach',"prof.png","icon proff", "Educación")
+		+specialtie('code', "code.png","icon code", "Frontend Developer")
+section.hero.theme
+	p
+		| Cuento con más de 15 de experiencia
+		strong docente a nivel Universidad
+		| en el área de Ciencias de la Computación, 
+		| soy apasionado de las 
+		strong TI y Programación
+		| , con gran habilidad para la resolución de problemas,
+		| trabajo en equipo, colaborativo, adaptabilidad 
+		| a las nuevas tecnologías y autodidacta
+section.contact.theme
+	ul.social
+		+contact('location', "Oaxaca City, México2")
+		+contact('phone', "(52) 951 244 0735")
+		+contact('mail2', "jorrge.cruz@gmail.com")
+		+contact('linkedin', "www.linkedin.com/in/jorrgecruz", "https://www.linkedin.com/in/jorrgecruz/") 
+		+contact('github',"github.com/jorrgeCruz","https://github.com/jorrgeCruz/") 

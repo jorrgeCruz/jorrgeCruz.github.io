@@ -1,0 +1,51 @@
+extend components/plantilla.pug
+block contenido
+	section.experience-list.theme
+		h3.experience-title Main Projects
+		+experience("AGO", "2020", "#", "https://dl.dropboxusercontent.com/s/9gco46p3ytqv6jn/Images1.png?dl=0", "Mini imagen de proyecto", "This main page", "HTML, JS, PUG, SASS","https://github.com/jorrgeCruz/jorrgeCruz.github.io", "Personal Portfolio", "As a result of being in Platzi, now we can show the results, this portfolio have JS implemented, and was written in PUG and SASS")
+		+experience("DIC", "2019", "slider.html#1", "https://dl.dropboxusercontent.com/s/9gco46p3ytqv6jn/Images1.png?dl=0", "Mini imagen de proyecto", "Basic Image Processing", "Java GUI, jpg images and 3-dimensional arrays","https://github.com/jorrgeCruz/java-image-processing", "Java Image Processing", "As a result of Image Processing class, we develop an application that process images from the RGB values, with bit level numbers operations and some other basic operatios, as a result we program a GUI")
+		+experience("AGO", "2019", "slider.html#2", "https://dl.dropboxusercontent.com/s/0byrn9t29ot26n7/Pistons1.png?dl=0", "Mini imagen de proyecto", "Pistons-Computer Graphic Model", "Java GUI, 3D Graphics, Animation and Threads","https://github.com/jorrgeCruz/pistons3D", "Pistons", "A basic 3D program made in Java that shows a animation of pistons in sequential movement, it can shows 1, 2 3 or 4 pistons and you can see them from any angle around 360º un a 3D sphere")
+		+experience("DIC", "2018", "slider.html#3", "https://dl.dropboxusercontent.com/s/6s366h2liggmt8w/Chess1.png?dl=0", "Mini imagen de proyecto", "3D Model Chess", "Java GUI, 3D Graphics, UI","https://github.com/jorrgeCruz/pistons3D", "Chess", "A basic model of a 3D chess made in Java,you can see them from any angle around 360º un a 3D sphere and make movements of each piece, it doesn't have rules or an autonomous player because it only was made as graphic model for academic purposes")
+	section.academic-history.theme
+		h3 Educación
+		ul
+			li
+				.icon
+					i.icon-graduate
+				.history-data
+					h3 CENTRO DE INVESTIGACION EN MATEMATICAS (CIMAT)
+					| Maestria Ciencias de la Computacion y Matematicas Industriales
+					| 2002-2004
+					br
+					strong Beca Conacyt - Posgrado de Excelencia
+				.prize1
+					i.icon-medal
+			li
+				.icon
+					i.icon-graduate
+				.history-data
+					h3 INSTITUTO TECNOLOGICO DE OAXACA
+					| Ingenieria Civil
+					| 1995-2000
+					br
+					strong Titulo por Promedio mayor a 9
+				.prize1
+					i.icon-medal
+	section.languages.theme
+		h3 Idiomas
+		div
+			div
+				h2 Ingles
+			ul.idioms
+				li Comprensión
+				li Conversación
+				li Escritura
+				li B1
+				li A2
+				li A2
+	section.references.theme
+		h3 Referencias
+		ul
+			+reference("https://www.linkedin.com/in/omarsosatzec/", "Omar Sosa-Tzec", "Assistant Professor of Design Foundations at San Francisco State University", 'lin')
+			+reference("https://www.linkedin.com/in/leonardo-gomez-8a554b94/", "Leonardo Gomez", "iOS Developer at Softtek México <br>UABJO", 'lin')
+			+reference("http://www.ciencias.uabjo.mx/contacto", "Ruben López González", "Director de la Escuela de Ciencias -UABJO")
