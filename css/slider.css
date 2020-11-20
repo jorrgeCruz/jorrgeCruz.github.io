@@ -185,7 +185,9 @@ li a{
   position: absolute;
   top: 0;
 }
-
+.dots {
+	text-align:center;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

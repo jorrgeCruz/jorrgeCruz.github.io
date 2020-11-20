@@ -1,0 +1,8 @@
+extend head.pug
+include mixins.pug
+block body
+	section.gridparent
+		include header-short.pug
+		block contenido
+		include footer.pug
+	script(src='./js/slider.js')
