@@ -1,0 +1,79 @@
+extend components/plantilla.pug
+block contenido
+	section.pai-chart.theme
+		div
+			h3 Características
+		.chart
+			canvas(id="circlechart" width="640" height="400")
+	section.competences.theme
+		h3 Competencias
+		ul
+			+competences("HTML", 'html')
+			+competences("CSS", 'css')
+			+competences("JavaScript", 'js')
+			+competences("Java SE", 'java')
+			+competences("git", 'git')
+			+competences("PHP", 'php')
+			+competences("Angular", 'angular')
+			+competences("React", 'react')
+			+competences("Node", 'node')
+			+competences("MySQL", 'mysql')
+			+competences("SASS", 'sass')
+			+competences("PUG", 'pug')
+	section.hobbies.theme
+		h3 Gustos
+		ul.subcontainer
+			+hobbies('headphones', "Music")
+			+hobbies('bike', "Bikejoring")
+			+hobbies('mobile', "Gadgets")
+			+hobbies('sports_motorsports', "Races and F1")
+			+hobbies('film1', "Movies")
+			+hobbies('weights', "Workout")
+	section.experience-list.theme
+		h3.experience-title Experiencia
+		+wexperience("AGO", "2020","A LA","FECHA", "Incosur", "Desarrollo de pàgina de ventas", "Sitio oficial de la empresa INCOSUR (en desarrollo)")
+		+wexperience("AGO", "2005","A LA","FECHA", "Universidad Autónoma Benito Juárez de Oaxaca", "Profesor de cátedra en <a class=\"experience-url\" href=\"https://www.ciencias.uabjo.mx\" target=\"_blank\"> Escuela de ciencias</a>", "Licenciaturas:  Física, Matemáticas, Computación")
+		+wexperience("SEP", "2009","AGO", "2012", "Director de la Escuela de Ciencias, UABJO, 2009-2012", "En 2009 fui electo director de la Escuela de Ciencias, cumpliendo las labores administrativas que generaron la acreditación de la misma y construcción de nuevos edificios")
+	section.academic-history.theme
+		h3 Educación
+		ul
+			li
+				.icon
+					i.icon-graduate
+				.history-data
+					h3 CENTRO DE INVESTIGACION EN MATEMATICAS (CIMAT)
+					| Maestria Ciencias de la Computacion y Matematicas Industriales
+					| 2002-2004
+					br
+					strong Beca Conacyt - Posgrado de Excelencia
+				.prize1
+					i.icon-medal
+			li
+				.icon
+					i.icon-graduate
+				.history-data
+					h3 INSTITUTO TECNOLOGICO DE OAXACA
+					| Ingenieria Civil
+					| 1995-2000
+					br
+					strong Titulo por Promedio mayor a 9
+				.prize1
+					i.icon-medal
+	section.languages.theme
+		h3 Idiomas
+		div
+			div
+				h2 Ingles
+			ul.idioms
+				li Comprensión
+				li Conversación
+				li Escritura
+				li B1
+				li A2
+				li A2
+	section.references.theme
+		h3 Referencias
+		ul
+			+reference("https://www.linkedin.com/in/omarsosatzec/", "Omar Sosa-Tzec", "Assistant Professor of Design Foundations at San Francisco State University", 'lin')
+			+reference("https://www.linkedin.com/in/leonardo-gomez-8a554b94/", "Leonardo Gomez", "iOS Developer at Softtek México <br>UABJO", 'lin')
+			+reference("http://www.ciencias.uabjo.mx/contacto", "Ruben López González", "Director de la Escuela de Ciencias -UABJO")

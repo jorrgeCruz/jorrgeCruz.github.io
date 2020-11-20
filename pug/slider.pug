@@ -1,0 +1,18 @@
+extend components/slider-templ.pug
+block contenido
+	main.slider.theme
+		section
+			.slideshow-container
+				+slide("1 / 3", "https://dl.dropboxusercontent.com/s/9gco46p3ytqv6jn/Images1.png?dl=0", "Lectura de imagen" )
+				+slide("2 / 3", "https://dl.dropboxusercontent.com/s/b1zm6bmkyodod2f/Images2.png?dl=0", "Ventana de menu de operaciones" )
+				+slide("3 / 3", "https://dl.dropboxusercontent.com/s/by4upyycot5vh3x/Images3.png?dl=0", "Algunos resultados del procesamiento" )
+				+slide("1 / 3", "https://dl.dropboxusercontent.com/s/0byrn9t29ot26n7/Pistons1.png?dl=0", "Visor principal 4 pistones" )
+				+slide("2 / 3", "https://dl.dropboxusercontent.com/s/wnrp4unr1u5q9d6/Pistons2.png?dl=0", "Elección de no. de pistones" )
+				+slide("3 / 3", "https://dl.dropboxusercontent.com/s/o1452vanhgnro75/Pistons3.png?dl=0", "Visor principal 2 pistones" )
+				+slide("1 / 3", "https://dl.dropboxusercontent.com/s/6s366h2liggmt8w/Chess1.png?dl=0", "Visor tablero ajedrez" )
+				+slide("2 / 3", "https://dl.dropboxusercontent.com/s/74qsxecvkpe2tqj/Chess2.png?dl=0", "Vista 3d de una pieza" )
+				+slide("3 / 3", "https://dl.dropboxusercontent.com/s/ka3ou1j9454avmy/Chess3.png?dl=0", "Visor principal ajedrez" )
+			.dots
+				span.dot
+				span.dot
+				span.dot

@@ -2,7 +2,6 @@ body{
   font-family: 'Baloo Da 2', Arial;
   margin: 0;
   background-color: rgb(240,249,245);
-  
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -14,20 +13,16 @@ h1, h2, h3, h4, h5, h6{
 
 .gridparent{
   display: grid;
-  grid-template: 40px 200px 220px 400px 150px 200px 50px/ 50% 50%;
+  grid-template: 40px 200px 220px 40% 150px 200px 50px/ 50% 50%;
   margin:0 auto;
   gap: 10px;
   max-width:1000px;
-  /* height: 100vh; */
-   /* background-color: rgb(68,53,68); */
-   
-  /*color: white; */
   grid-template-areas: "header header"
                        "me specialties"
                        "hero contact"
-                       "experience-list academic-history"
-                       "experience-list languages"
-                       "experience-list references"
+                       "experience-list experience-list2"
+                       "experience-list experience-list2"
+                       "experience-list experience-list2"
                        "footer footer";
 }
 /* .bar{
@@ -165,6 +160,10 @@ h1, h2, h3, h4, h5, h6{
   grid-area: experience-list ;
   background-color:  rgb(220,229,225);
 }
+.experience-list2{
+	grid-area: experience-list2 ;
+	background-color:  rgb(220,229,225);
+  }
 .experience{
   display: grid;
   grid-template: 250px / 1fr 3fr;
