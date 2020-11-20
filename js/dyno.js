@@ -6,7 +6,7 @@ const theme = document.getElementById("label");
 const items = document.getElementsByClassName("theme");
 
 var themeBool = false;
-// console.log(body);
+// console.log(burguerButton);
 
 burguerButton.addEventListener('click', hideShow);
 theme.addEventListener('click', changeTheme);

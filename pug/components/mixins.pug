@@ -1,3 +1,5 @@
+mixin link(file)
+	script(src=file)
 mixin specialtie(cla, src, alter, text)
 	li
 		img(class=cla src="./images/"+src alt=alter)
@@ -34,3 +36,28 @@ mixin reference(url, name, post, link)
 				i.icon-mail2
 		strong=name
 		| #{post}
+mixin competences(tit, bar)
+	li
+		div=tit
+		canvas(id=bar+'-bar' class=bar+" bar" width="200" height="20")
+mixin hobbies(cla, tit)
+	li
+		i(class="icon-"+cla)
+		div=tit
+mixin wexperience(month1, year1, month2, year2, smtitle, shortVer, parr)
+	article.experience
+		.date
+			h2=month1
+			h3=year1
+			h2=month2
+			h3=year2
+		.experience-details
+			h3.experience-smallTitle=smtitle
+			p.experience-description !{shortVer}
+				br
+				| #{parr}
+mixin slide(no, url, descr)
+	.mySlides.fade
+		.numbertext=no
+		img(src=url style="width:100%")
+		.text=descr

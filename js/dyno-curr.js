@@ -23,10 +23,10 @@ const indiceBar = {
   PHP: 5,
   ANGULAR: 6,
   REACT: 7,
-  KOTLIN:8,
-  NODE: 9,
-  MYQSL: 10,
-  MONGO: 11
+  NODE:8,
+  MYQSL: 9,
+  SASS: 10,
+  PUG: 11
 };
 const rWidth= 10, rHeight=10;
 var maxX = circleChart.width - 1, maxY = circleChart.height - 1,
@@ -123,7 +123,7 @@ function dibujoBarra(tipoBarra, level, valida){
   tipoBarra.fillRect(0, 0, 200, 20);
   // Fill with gradient
   tipoBarra.fillStyle = grd;
-  tipoBarra.fillRect(0, 0, level, 20);
+  tipoBarra.fillRect(0, 0, (level===MEDIUM?level*1.3:level), 20);
  }
 
  function changeTheme(){
@@ -157,9 +157,9 @@ function dibujoBarra(tipoBarra, level, valida){
   dibujoBarra(barras[indiceBar.HTML].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.JAVA].getContext("2d"), ADVANCE, themeBool);
   dibujoBarra(barras[indiceBar.JS].getContext("2d"), MEDIUM, themeBool);
-  dibujoBarra(barras[indiceBar.KOTLIN].getContext("2d"), MEDIUM, themeBool);
-  dibujoBarra(barras[indiceBar.MONGO].getContext("2d"), LOW, themeBool);
-  dibujoBarra(barras[indiceBar.MYQSL].getContext("2d"), LOW, themeBool);
+  dibujoBarra(barras[indiceBar.SASS].getContext("2d"), MEDIUM, themeBool);
+  dibujoBarra(barras[indiceBar.PUG].getContext("2d"), MEDIUM, themeBool);
+  dibujoBarra(barras[indiceBar.MYQSL].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.NODE].getContext("2d"), LOW, themeBool);
   dibujoBarra(barras[indiceBar.PHP].getContext("2d"), LOW, themeBool);
   dibujoBarra(barras[indiceBar.REACT].getContext("2d"), LOW, themeBool);
