@@ -51,23 +51,23 @@ function dibujoCChart(theme){
   lienzoCChart.arc(iX(0), iY(0), Math.abs(iX(4)-iX(0)), 0,2*Math.PI, false);
   lienzoCChart.stroke();
 
-  lienzoCChart.fillText("AUTODIDACTA 22%", iX(2), iY(3.7));
+  lienzoCChart.fillText("AUTODIDACTA 25%", iX(2), iY(3.7));
   lienzoCChart.fillText("Estar a la vanguardia y nunca ", iX(2.7), iY(3.1));
   lienzoCChart.fillText("dejar de aprender, me define", iX(3.1), iY(2.7));
 
-  lienzoCChart.fillText("DINAMICO 12%", iX(4), iY(1.2));
+  lienzoCChart.fillText("DINAMICO 15%", iX(4), iY(1.2));
   lienzoCChart.fillText("Moverse, fisica y tecnologica-", iX(4), iY(0.6));
   lienzoCChart.fillText("mente, cada dia es mas facil.", iX(4.1), iY(.2));
 
-  lienzoCChart.fillText("CREATIVO 22%", iX(3.5), iY(-2.3));
+  lienzoCChart.fillText("CREATIVO 20%", iX(3.5), iY(-2.3));
   lienzoCChart.fillText("Usar la imaginación para generar", iX(3.1), iY(-2.9));
   lienzoCChart.fillText("ideas originales", iX(2.7), iY(-3.3));
 
-  lienzoCChart.fillText("APASIONADO 21%", iX(-5.3), iY(-2.8));
+  lienzoCChart.fillText("APASIONADO 20%", iX(-5.3), iY(-2.8));
   lienzoCChart.fillText("La satisfaccion y orgullo de ", iX(-5.5), iY(-3.4));
   lienzoCChart.fillText("generar el resultado deseado", iX(-5), iY(-3.8));
 
-  lienzoCChart.fillText("INGENIOSO 23%", iX(-5.6), iY(2.2));
+  lienzoCChart.fillText("INGENIOSO 20%", iX(-5.6), iY(2.2));
   lienzoCChart.fillText("Realizar aquello que hemos ideado", iX(-7.7), iY(1.6));
   lienzoCChart.fillText("de forma creativa para volverlo", iX(-7.5), iY(1.2));
   lienzoCChart.fillText("realidad", iX(-5), iY(0.8));
@@ -164,8 +164,8 @@ function dibujoBarra(tipoBarra, level, valida){
   dibujoBarra(barras[indiceBar.PHP].getContext("2d"), LOW, themeBool);
   dibujoBarra(barras[indiceBar.REACT].getContext("2d"), LOW, themeBool);
  }
- changeTheme();
  //BLOQUE PRINCIPAL
+ changeTheme();
  validation(ipad);
 
  

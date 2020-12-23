@@ -6,13 +6,13 @@ const theme = document.getElementById("label");
 const items = document.getElementsByClassName("theme");
 
 var themeBool = false;
-// console.log(burguerButton);
 
 burguerButton.addEventListener('click', hideShow);
 theme.addEventListener('click', changeTheme);
 ipad.addListener(validation);
 
 function hideShow(){
+  console.log("happening");
   if(menu.classList.contains("is-active"))
     menu.classList.remove("is-active");
   else
@@ -27,8 +27,6 @@ function validation(event ){
 }
 
  function changeTheme(){
-  //  debugger
-  // console.log(theme.innerText);
     if(theme.innerText === "Dark theme"){
       theme.innerText = "Light theme";
       themeBool = true;
@@ -48,13 +46,8 @@ function validation(event ){
       body.style.backgroundColor = 'rgb(240,249,245)';
       body.style.color = 'black';
     }
-    //dibujaTodo();  
-    // console.log(theme.innerText);
- }
+}
 
- changeTheme();
  //BLOQUE PRINCIPAL
- validation(ipad);
-
- 
-
+changeTheme();
+validation(ipad);

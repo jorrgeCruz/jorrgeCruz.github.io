@@ -1,0 +1,66 @@
+.gridparent{
+	@include media(desktop-s){
+		max-width:1000px;
+		margin:0 auto;
+		@include display-grid;
+		// grid-template: 40px 200px 220px 40% 150px 200px 50px/ 50% 50%;
+		@include grid-template-rows(40px 200px 220px 40% 150px 200px 50px);
+		@include grid-template-columns(50% 50%);
+		gap: 10px;
+		grid-template-areas: "header header"
+							"me specialties"
+							"hero contact"
+							"experience-list experience-list2"
+							"experience-list experience-list2"
+							"experience-list experience-list2"
+							"footer footer";
+	}
+	width:100%;
+	/* display: flex;
+	flex-direction: column;*/
+	@include display-grid;
+	// grid-template: 40px 200px 220px 40% 150px 200px 50px/ 50% 50%;
+							// head  me    speci hero  conta  
+	@include grid-template-rows(40px 200px 160px 200px 220px 684px 440px 50px);
+	@include grid-template-columns(100%);
+	gap: 10px;
+	grid-template-areas: "header"
+						"me" 
+						"specialties"
+						"hero" 
+						"contact"
+						"experience-list"
+						"experience-list2"
+						"footer";
+}
+
+.header{
+	grid-area: header;
+}
+
+.me{
+	grid-area: me;
+}
+
+.specialties{
+	grid-area: specialties;
+}
+
+.hero{
+	grid-area: hero;
+}
+
+.contact{
+	grid-area: contact;
+}
+
+.experience-list{
+	grid-area: experience-list;
+}
+.experience-list2{
+	grid-area: experience-list2;
+}
+
+.footer{
+	grid-area:footer;
+}
