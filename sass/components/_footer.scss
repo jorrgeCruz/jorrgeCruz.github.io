@@ -1,0 +1,36 @@
+
+footer .container{
+	width: 100%;
+	@include display-flex-center;
+	justify-content: center;
+}
+
+.footer{
+	padding-right: 40px;
+	background-color: #2d3436;
+	color: white;
+	@include display-flex-center;
+	justify-content: space-between;
+	img{
+		@include media(desktop-s){
+			height: 100px;
+		}
+		height: 70px;
+		border-radius: 50%;
+	}
+	div{
+		@include media(tablet){
+			@include font-size(16px);
+		}
+		@include font-size(12px);
+	}
+}
+
+.footer-div{
+	display: inherit;
+	align-items: center;
+	@include media(desktop-s){
+		@include font-size(16px);
+	}
+	@include font-size(12px);
+}

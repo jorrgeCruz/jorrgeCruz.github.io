@@ -1,0 +1,89 @@
+.academic-history{
+	background-color: $color-fondo-light;
+	h3{
+		@include media(desktop-s){
+			@include font-size(20px);
+		}
+		margin: 2px;
+		@include font-size(16px);
+	}
+	/* p{
+		@include media(desktop-s){
+			@include font-size(16px);
+		}
+		@include font-size(12px);
+	} */
+	li{
+		display: flex;
+	}
+	i{
+		font-size: 48px;
+		color: blueviolet;
+	}
+	ul{
+		@include media(tablet){
+			padding-left: 40px;
+		}
+		padding-left: 10px;
+	}
+}
+
+div.icon{
+	width: 100px;
+}
+
+.history-data{
+	width: 290px;
+	@include media(desktop-s){
+		@include font-size(16px);
+	}
+	@include font-size(12px);
+}
+
+.prize{
+	padding-top: 100px;
+}
+
+.prize1{
+	padding-top: 110px;
+}
+
+.languages{
+	background-color: $color-fondo-light;
+	// padding-top: 20px;
+	h2{
+		background-color: rgb(255,118,96);
+		margin: 0 80px;
+		@include font-size(16px);
+		border-radius: 3px;
+	}
+
+}
+
+.idioms{
+	display: grid;
+	grid-template: 1fr 1fr / repeat(3, 1fr);
+	margin-left: 20px;
+	li{
+		@include media(tablet){
+			@include font-size(16px);
+		}
+		margin: 2px;
+		@include font-size(12px);
+	}
+}
+
+.references{
+	grid-area:references;
+	background-color:  rgb(220,229,225);
+	ul{
+		padding-left: 10px;
+	}
+	li{
+		@include media(tablet){
+			@include font-size(16px);
+		}
+		margin: 2px;
+		@include font-size(12px);
+	}
+}

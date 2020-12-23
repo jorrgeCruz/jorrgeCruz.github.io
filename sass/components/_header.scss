@@ -1,0 +1,43 @@
+.menu{
+	@include media(tablet){
+		position: initial;
+		//background-color: $color-fondo-light;
+	}
+	position: fixed;
+	//background-color: $color-fondo-light-t;
+	z-index: 3;
+	top: 0;
+	left: -100vw;
+	transition: 0.7s;
+}
+
+.is-active{
+	left: 0;
+	background-color: $color-fondo-light-t;
+}
+
+.menu ul{
+	li{
+		margin: 0 1em;
+		a{
+			text-decoration: none;
+		}
+	}
+	@include media(tablet){
+		display: flex;
+	}
+}
+
+#label{
+	cursor: pointer;
+}
+
+.header{
+	background-color:  $color-fondo-light;
+	@include display-flex-center;
+	justify-content: flex-end;
+}
+
+.link{
+	color: inherit;
+}

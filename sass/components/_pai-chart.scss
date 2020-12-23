@@ -1,0 +1,63 @@
+.pai-chart{
+	background-color: $color-fondo-light;
+	display: block;
+	justify-content: center;
+}
+
+.chart{
+	@include display-flex-center;
+	@include media(tablet){
+		padding: 0 230px;
+	}
+	@include media(desktop-s){
+		padding: 0 170px;
+	}
+	padding: 0px;
+	canvas{
+		@include media(desktop-s){
+			width: 640px;
+			height: 400px;
+		}
+		/* @include media(desktop-s){
+			padding: 0 170px;
+		} */
+		width: 320px;
+		height: 250px;
+	}
+}
+
+.competences{
+	background-color: $color-fondo-light;
+}
+
+.competences li{
+	display: flex;
+	padding: 4px 0;
+	height: 20px;
+}
+.competences div{
+	width: 100px;
+}
+.competences canvas{
+	box-shadow: 5px 4px 4px 1px lightgrey;
+}
+.subcontainer{
+	display: grid;
+	grid-template: 150px 150px / 1fr 1fr 1fr;
+	@include media(tablet){
+		padding-left: 130px;
+	}
+	@include media(desktop-s){
+		padding-left: 80px;
+	}
+	padding-left: 40px;
+}
+
+.hobbies{
+	background-color: $color-fondo-light;
+}
+
+.hobbies i{
+	font-size: 60px;
+	color: mediumorchid;
+}

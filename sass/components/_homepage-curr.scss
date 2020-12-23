@@ -1,0 +1,89 @@
+.gridparent{
+	@include media(desktop-s){
+		max-width:1000px;
+		margin:0 auto;
+		@include display-grid;
+		// grid-template: 40px 200px 220px 440px 400px 400px 150px 200px 50px/ 50% 50%;
+		@include grid-template-rows(40px 200px 220px 440px 320px 400px 150px 200px 50px);
+		@include grid-template-columns(50% 50%);
+		gap: 10px;
+		grid-template-areas: "header header"
+							"me specialties"
+							"hero contact"
+							"pai-chart pai-chart"
+							"competences hobbies"
+							"experience-list academic-history"
+							"experience-list languages"
+							"experience-list references"
+							"footer footer";
+	}
+	width:100%;
+	/* display: flex;
+	flex-direction: column;*/
+	@include display-grid;
+	// grid-template: 40px 200px 220px 40% 150px 200px 50px/ 50% 50%;
+							// head  me    speci hero  conta pai   compe hobb  exper educ  idiom refe
+	@include grid-template-rows(40px 200px 160px 200px 220px 300px 320px 320px 660px 400px 120px 150px 50px);
+	@include grid-template-columns(100%);
+	gap: 10px;
+	grid-template-areas: "header"
+						"me" 
+						"specialties"
+						"hero" 
+						"contact"
+						"pai-chart"
+						"competences" 
+						"hobbies"
+						"experience-list"
+						"academic-history"
+						"languages"
+						"references"
+						"footer";
+}
+
+.header{
+	grid-area: header;
+}
+
+.me{
+	grid-area: me;
+}
+
+.specialties{
+	grid-area: specialties;
+}
+
+.hero{
+	grid-area: hero;
+}
+
+.contact{
+	grid-area: contact;
+}
+
+.experience-list{
+	grid-area: experience-list;
+}
+
+.pai-chart{
+	grid-area: pai-chart;
+}
+
+.competences{
+	grid-area: competences;
+}
+.hobbies{
+	grid-area: hobbies;
+}
+.academic-history{
+	grid-area:academic-history;
+}
+.languages{
+	grid-area:languages;
+}
+.references{
+	grid-area:references;
+}
+.footer{
+	grid-area:footer;
+}
