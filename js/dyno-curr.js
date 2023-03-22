@@ -26,7 +26,10 @@ const indiceBar = {
   NODE:8,
   MYQSL: 9,
   SASS: 10,
-  PUG: 11
+  PUG: 11,
+  TYPE: 12,
+  R: 13,
+  RMD:14
 };
 const rWidth= 10, rHeight=10;
 var maxX = circleChart.width - 1, maxY = circleChart.height - 1,
@@ -156,6 +159,7 @@ function dibujoBarra(tipoBarra, level, valida){
   dibujoBarra(barras[indiceBar.GIT].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.HTML].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.JAVA].getContext("2d"), ADVANCE, themeBool);
+  dibujoBarra(barras[indiceBar.TYPE].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.JS].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.SASS].getContext("2d"), MEDIUM, themeBool);
   dibujoBarra(barras[indiceBar.PUG].getContext("2d"), MEDIUM, themeBool);
@@ -163,6 +167,8 @@ function dibujoBarra(tipoBarra, level, valida){
   dibujoBarra(barras[indiceBar.NODE].getContext("2d"), LOW, themeBool);
   dibujoBarra(barras[indiceBar.PHP].getContext("2d"), LOW, themeBool);
   dibujoBarra(barras[indiceBar.REACT].getContext("2d"), LOW, themeBool);
+  dibujoBarra(barras[indiceBar.R].getContext("2d"), LOW, themeBool);
+  dibujoBarra(barras[indiceBar.RMD].getContext("2d"), LOW, themeBool);
  }
  //BLOQUE PRINCIPAL
  changeTheme();
